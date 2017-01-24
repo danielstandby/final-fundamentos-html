@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
+        <title>Curriculum Vitae</title>
+        <meta name="description" content="Ejercicio HTML5: Desarrollar una Hoja de Vida virtual utilizando todos los contenidos estudiados en el programa" />
+        <meta name="keywords" content="curriculum vitae,hoja de vida,resumen curricular,ejercicio html5,final fantasy vii, next university" />
+    </head>
+
+    <body style="max-width:960px; margin: 0 auto;">
+
+        <header>
+            <img src="img/final-fantasy.svg" width="300px" title="Final Fantasy" alt="Final Fantasy" />
+            <h1>Curriculum Vitae</h1>
+            <h2>Cloud Strife</h2>
+            <h3><b>Fecha de nacimiento:</b> 19 de agosto</h3>
+            <h3><b>Lugar de nacimiento:</b> Nibelheim</h3>
+            <nav>
+                <a href="index.html">Información Personal</a> |
+                <a href="equipamento.html">Equipamento</a> |
+                <a href="batallas.html">Batallas</a>
+            </nav>
+        </header>
+
+        <hr/>
+
+        <main>
+
+            <h2>Equipamento</h2>
+
+            <table style="border-collapse: collapse" border="1">
+                <thead>
+                    <tr>
+                        <th>Materia</th>
+                        <th>Nivel</th>
+                        <th>Habilidad</th>
+                        <th>Efecto</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Bahamut</td>
+                        <td>4/5</td>
+                        <td>Daño x4</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Knights of the Round</td>
+                        <td>5/5</td>
+                        <td>Daño x12</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>Exp Plus</td>
+                        <td>2/5</td>
+                        <td>Aumenta Exp.</td>
+                        <td>Suerte +1</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Agregar Equipamento</h3>
+
+            <form action="#">
+
+                <div>
+                    <label for="materia"><b>Materia</b></label>
+                    <select id="materia" name="materia" required>
+                        <option value="ramuh">Ramuh</option>
+                        <option value="ifrit">Ifrit</option>
+                        <option value="shiva">Shiva</option>
+                        <option value="titan">Titan</option>
+                        <option value="odin">Odin</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label><b>Nivel</b></label>
+                    <label>
+                        <input type="radio" name="nivel" value="1" /> 1
+                        <input type="radio" name="nivel" value="2" /> 2
+                        <input type="radio" name="nivel" value="3" /> 3
+                        <input type="radio" name="nivel" value="4" /> 4
+                        <input type="radio" name="nivel" value="5" /> 5
+                    </label>
+                </div>
+
+                <div>
+                    <label for="habilidad"><b>Habilidad</b></label>
+                    <input type="text" id="habilidad" name="habilidad" required/>
+                </div>
+
+                <div>
+                    <label for="efecto"><b>Efecto</b></label>
+                    <input type="text" id="efecto" name="efecto"/>
+                </div>
+
+                <div>
+                    <input type="submit" />
+                </div>
+
+            </form>
+
+        </main>
+
+        <hr/>
+
+        <footer>
+            <ul>
+                <li><b>Correo electrónico:</b> <a href="mailto:cloud.strife@finalfantasy.com">cloud.strife@finalfantasy.com</a></li>
+                <li><b>Teléfono:</b> 01 8000 111 22 33</li>
+                <li><b>Facebook:</b> <a href="https://www.facebook.com/CloudStrifesPage/" target="_blank">https://www.facebook.com/CloudStrifesPage</a></li>
+            </ul>
+        </footer>
+
+    </body>
+
+</html>
